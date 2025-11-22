@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#left{
+    padding:48px;
+    background-color: rgba(1, 1, 24, 0.719);
+    width: 420px;
+    height: auto;
+}
+#name{
+    margin: 0;
+}
+hr{
+    display: inline-block;
+    border: 1px solid rgba(55, 155, 55, 0.80);
+    width: 70%;
+    margin-bottom: 20px;
+}
+.personal-information{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 30px;
+}
+.personal-information svg{
+    width: 20px;
+    height: auto;
+    fill: rgba(55, 155, 55, 0.80);
+}
+
+#mail-btn{
+    background-color: rgba(55, 105, 55, 0.80);
+    border-radius: 15px;
+    padding: 11px 0;
+    width: 150px;
+    text-align: center;
+    margin: 30px 0;
+
+}
+#mail-btn:hover{
+    background-color: rgba(55, 155, 55, 0.80);
+    cursor: pointer;
+}
+#mail-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+#socialmedia{
+    display: flex;
+    gap: 15px;
+}
+#socialmedia svg{
+    width: 25px;
+    height: auto;
+    fill: gray;
+}
+#socialmedia svg:hover{
+    fill: rgba(55, 155, 55, 0.80);
+}
+#personal-photo img{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+@media (max-width: 850px) {
+    #content {
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 0; 
+    }
+
+    #personal-photo {
+        order: -1; 
+        margin-top: 20px; 
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+    }
+
+    #personal-photo img {
+        width: 65%; 
+        max-width: 350px; 
+        height: auto;
+        border-radius: 50%; 
+    }
+
+    #left {
+        width: 90%; 
+        height: auto; 
+        padding: 30px; 
+        box-sizing: border-box;
+    }
+    #name{
+        text-align: center;
+    }
+    hr{
+        display: flex;
+    }
+    body {
+        padding: 15px; 
+        /* background-attachment: scroll;  */
+    }
+
+    #mail-btn {
+        margin: 30px auto;
+    }
+}
