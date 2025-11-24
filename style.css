@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 20px;
+    padding: 0;
     color: white;
     background-image: url(assets/background.jpg);
     background-repeat: no-repeat;
@@ -10,12 +10,31 @@ body{
     background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
+    transition: all 1s;
+}
+#buttons{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+#buttons button{
+    background-color: rgba(1, 1, 24, 0.473);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#buttons button:hover{
+    background-color: rgba(1, 1, 24, 0.788);
 }
 
 #content{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
     gap: 30px;
 }
 #left{
@@ -83,6 +102,7 @@ hr{
 
 
 @media (max-width: 850px) {
+    
     #content {
         flex-direction: column; 
         gap: 20px; 
@@ -98,7 +118,7 @@ hr{
     }
 
     #personal-photo img {
-        width: 65%; 
+        width: 55%; 
         max-width: 350px; 
         height: auto;
         border-radius: 50%; 
@@ -117,7 +137,7 @@ hr{
         display: flex;
     }
     body {
-        padding: 15px; 
+        padding: 200px 15px 200px 15px; 
         /* background-attachment: scroll;  */
     }
 
